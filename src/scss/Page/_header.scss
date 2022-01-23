@@ -1,0 +1,10 @@
+#top-page
+  .page-header {
+    background-color: transparent;
+    &.is-scrolled {
+      background-color: #222;
+    }
+    &.is-default-color {
+      background-color: #222;
+    }
+  }

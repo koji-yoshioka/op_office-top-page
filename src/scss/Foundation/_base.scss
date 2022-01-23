@@ -1,0 +1,18 @@
+@use './function';
+
+html {
+  @include function.mq(sp) {
+    font-size: 12px;
+  }
+  @include function.mq(tablet) {
+    font-size: 14px;
+  }
+  @include function.mq(pc) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: QYakuHanJP, 'Noto Sans JP', "游ゴシック", "Yu Gothic", sans-serif;
+  letter-spacing: 0.1rem;
+}

@@ -1,0 +1,62 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.p-container {
+  @include function.mq(sp) {
+    padding: 40px 20px 60px;
+  }
+  @include function.mq(tablet) {
+    padding: 40px 20px 80px;
+  }
+  @include function.mq(pc) {
+    padding: 60px 30px 120px;
+  }
+}
+
+.p-container--hero {
+  padding: 0
+}
+
+.p-container.has-bg-color {
+  @extend .p-container;
+  background-color: #f6f6f6;
+  box-shadow: 0px 0px 8px 2px #ddd inset;
+}
+
+.p-2col-container {
+  display: flex;
+  &__col--image {
+    // 画像表示においては一般的に余白不要と思われるため、余白を消す
+    padding: 0;
+  }
+  @include function.mq(sp) {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    &__col {
+      padding: 0px 20px 60px;
+    }
+  }
+  @include function.mq(tablet) {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    &__col {
+      padding: 0px 20px 80px;
+    }
+  }
+  @include function.mq(pc) {
+    flex-direction: row;
+    &__col {
+      padding: 5vh 30px 0px;
+    }
+  }
+}
+
+.p-2col-container--rev {
+  @extend .p-2col-container;
+  @include function.mq(pc) {
+    flex-direction: row-reverse;
+  }
+}
+

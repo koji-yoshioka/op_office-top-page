@@ -1,0 +1,38 @@
+// Foundation
+@use "Foundation/destyle.scss";
+@use "Foundation/variables";
+@use "Foundation/base";
+@use "Foundation/function";
+
+// Layout
+@forward "Layout/header";
+@forward "Layout/footer";
+
+// Page ※独自レイヤー。Page固有のスタイルを定義する。
+@forward "Page/header";
+
+// Object/Component
+@use "Object/Component/logo";
+@forward "Object/Component/menu";
+@forward "Object/Component/card";
+@forward "Object/Component/hero";
+@forward "Object/Component/image";
+@forward "Object/Component/map";
+@forward "Object/Component/title";
+@forward "Object/Component/text";
+
+// Object/Project
+@use "Object/Project/address";
+@use "Object/Project/container";
+@forward "Object/Project/section";
+@forward "Object/Project/title";
+@forward "Object/Project/access";
+@forward "Object/Project/hero";
+@forward "Object/Project/menu";
+@forward "Object/Project/footer";
+@forward "Object/Project/logo";
+@forward "Object/Project/card";
+
+// Object/Utility
+@use "Object/Utility/spacing";
+@use "Object/Utility/text";

@@ -1,0 +1,17 @@
+@use "../../Foundation/function";
+
+.p-logo {
+  @include function.mq(tablet) {
+    column-gap: 15px;
+    &__image-area {
+      width: 25px;
+    }
+  }
+  @include function.mq(pc) {
+    column-gap: 20px;
+    height: 100%;
+    &__image-area {
+      width: 30px;
+    }
+  }
+}

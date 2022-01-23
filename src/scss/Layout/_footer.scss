@@ -1,0 +1,17 @@
+@use "../Foundation/function";
+
+#footer {
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  @include function.mq(sp) {
+    padding: 10px;
+  }
+  @include function.mq(tablet) {
+    padding: 15px;
+  }
+  @include function.mq(pc) {
+    padding: 20px;
+  }
+}

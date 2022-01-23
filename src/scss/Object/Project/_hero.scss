@@ -1,0 +1,20 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.p-hero {
+  &--main {
+    display: flex;
+    align-items: center;
+  }
+  &__title--main {
+    color: #fff;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", serif;
+    font-size: min(4vw, 28px);
+    padding-left: 5vw;
+  }
+  @include function.mq(pc) {
+    &__title--main {
+      font-size: 2rem;
+    }
+  }
+}

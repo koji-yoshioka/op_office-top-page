@@ -1,0 +1,56 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.p-card {
+  padding: 20px;
+
+  @include function.mq(pc) {
+    &:hover {
+      box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.p-news-card {
+  @include function.mq(sp) {
+    width: calc(100% - 20px);
+  }
+  @include function.mq(tablet) {
+    width: calc(50% - 10px);
+  }
+  @include function.mq(pc) {
+    transition: all 0.4s ease;
+    width: min(calc(25% - 20px), 280px);
+    &:hover {
+      box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+      transform: translateY(-4px);
+    }
+  }
+}
+
+.p-intro-card {
+  @include function.mq(sp) {
+    width: calc(100% - 20px);
+  }
+  @include function.mq(tablet) {
+    width: calc(50% - 10px);
+  }
+  @include function.mq(pc) {
+    transition: all 0.4s ease;
+    width: min(calc(25% - 20px), 280px);
+    &:hover {
+      box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+      transform: translateY(-4px);
+    }
+    &__footer-button {
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #fff;
+        border: medium solid #222;
+        color: #222;
+        cursor: pointer;
+      }
+    }
+  }
+}

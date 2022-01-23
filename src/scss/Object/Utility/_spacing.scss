@@ -1,0 +1,27 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.u-mb {
+  &-15vh {
+    margin-bottom: 15vh;
+  }
+  &-20vh--pc {
+    margin-bottom: 0;
+    @include function.mq(pc) {
+      margin-bottom: 20vh;
+    }
+  }
+}
+
+.u-py {
+  &-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.u-pl {
+  &-5 {
+    padding-left: 5px;
+  }
+}

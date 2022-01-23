@@ -1,0 +1,27 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.p-footer {
+  display: flex;
+  flex-direction: column;
+  &__content-area {
+  }
+  &__copy-right {
+    line-height: 2;
+  }
+  @include function.mq(sp) {
+    row-gap: 20px;
+  }
+  @include function.mq(tablet) {
+    row-gap: 30px;
+    &__copy-right {
+      text-align: center;
+    }
+  }
+  @include function.mq(pc) {
+    row-gap: 5vh; // 対象が幅広いので、pxではなくビューポートを使う
+    &__copy-right {
+      text-align: center;
+    }
+  }
+}

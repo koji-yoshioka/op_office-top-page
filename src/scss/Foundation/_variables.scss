@@ -1,0 +1,9 @@
+$spHeaderHeight     : 60px;
+$tabletHeaderHeight : 70px;
+$pcHeaderHeight     : 80px;
+
+$breakpoints: (
+  'sp': 'screen and (max-width: 600px)',
+  'tablet': 'screen and (min-width: 601px) and (max-width:999px)',
+  'pc': 'screen and (min-width: 1000px)',
+) !default;

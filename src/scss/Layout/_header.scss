@@ -1,0 +1,28 @@
+@use "../Foundation/function";
+@use "../Foundation/variables";
+
+#header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  transition: all .5s;
+  width: 100%;
+  z-index: 2;
+  @include function.mq(sp) {
+    align-items: center;
+    height: function.my-getHeaderHeight(sp);
+    padding: 10px;
+  }
+  @include function.mq(tablet) {
+    align-items: center;
+    height: function.my-getHeaderHeight(tablet);
+    padding: 15px;
+  }
+  @include function.mq(pc) {
+    height: function.my-getHeaderHeight(pc);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

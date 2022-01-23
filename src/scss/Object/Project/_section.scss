@@ -1,0 +1,28 @@
+@use "../../Foundation/variables";
+@use "../../Foundation/function";
+
+.p-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // row-gap: 40px;
+  &__title-area {
+    text-align: center;
+  }
+  &__content-area {
+    width: 100%;
+  }
+  &__content-text {
+    max-width: 800px;
+    width: 100%;
+  }
+  @include function.mq(sp) {
+    row-gap: 20px;
+  }
+  @include function.mq(tablet) {
+    row-gap: 30px;
+  }
+  @include function.mq(pc) {
+    row-gap: 5vh; // 対象が幅広いので、pxではなくビューポートを使う
+  }
+}

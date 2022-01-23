@@ -1,0 +1,73 @@
+.c-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.c-news-card {
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  padding: 20px;
+  row-gap: 20px;
+  width: min(100%, 250px);
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__title {
+    font-size: 1rem;
+  }
+  &__text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+.c-intro-card {
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  padding: 20px;
+  width: min(100%, 250px);
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    row-gap: 20px;
+  }
+  &__image-area {
+    width: 100px;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title-area {
+    height: 2rem; // 一般的にタイトルは長くても２行と思われるので
+    display: flex;
+    align-items: center;
+  }
+  // &__title {
+  // }
+  // &__text-area {
+  // }
+  &__text {
+    line-height: 1.5;
+  }
+  &__footer-area {
+    // footerエリアは常に一番下
+    margin-top: auto;
+  }
+  &__footer-button {
+    background-color: #222;
+    border: medium solid #222;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
